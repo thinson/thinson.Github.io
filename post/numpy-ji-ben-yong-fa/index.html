@@ -1,22 +1,111 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://thinson.github.io</id>
-    <title>秋名山8086</title>
-    <updated>2021-03-31T02:26:58.859Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://thinson.github.io"/>
-    <link rel="self" href="https://thinson.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://thinson.github.io/images/avatar.png</logo>
-    <icon>https://thinson.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, 秋名山8086</rights>
-    <entry>
-        <title type="html"><![CDATA[numpy基本用法]]></title>
-        <id>https://thinson.github.io/post/numpy-ji-ben-yong-fa/</id>
-        <link href="https://thinson.github.io/post/numpy-ji-ben-yong-fa/">
-        </link>
-        <updated>2021-03-31T02:25:24.000Z</updated>
-        <content type="html"><![CDATA[<p>本文用到的代码整理如下：<br /><a href="https://www.yuque.com/attachments/yuque/0/2021/ipynb/2201071/1617090808276-5b91fdbf-afbc-4af6-8914-2df0a9ace4ef.ipynb?_lake_card=%7B%22uid%22%3A%221617090808127-0%22%2C%22src%22%3A%22https%3A%2F%2Fwww.yuque.com%2Fattachments%2Fyuque%2F0%2F2021%2Fipynb%2F2201071%2F1617090808276-5b91fdbf-afbc-4af6-8914-2df0a9ace4ef.ipynb%22%2C%22name%22%3A%22numpy%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.ipynb%22%2C%22size%22%3A10210%2C%22type%22%3A%22%22%2C%22ext%22%3A%22ipynb%22%2C%22progress%22%3A%7B%22percent%22%3A99%7D%2C%22status%22%3A%22done%22%2C%22percent%22%3A0%2C%22id%22%3A%22r8zoa%22%2C%22card%22%3A%22file%22%7D">numpy的基本使用.ipynb</a><br>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>numpy基本用法 | 秋名山8086</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://thinson.github.io/favicon.ico?v=1617157594703">
+<link rel="stylesheet" href="https://thinson.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="本文用到的代码整理如下：numpy的基本使用.ipynb
+
+创建 or 类型转换
+
+创建矩阵(dim=1)
+np.array() 直接创建：
+使用 np.ones()、np.zeros() 等方法：
+
+
+
+创建矩阵（dim&gt;1)
+np..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://thinson.github.io">
+        <img src="https://thinson.github.io/images/avatar.png?v=1617157594703" class="site-logo">
+        <h1 class="site-title">秋名山8086</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://thinson.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">numpy基本用法</h2>
+            <div class="post-date">2021-03-31</div>
+            
+            <div class="post-content" v-pre>
+              <p>本文用到的代码整理如下：<br /><a href="https://www.yuque.com/attachments/yuque/0/2021/ipynb/2201071/1617090808276-5b91fdbf-afbc-4af6-8914-2df0a9ace4ef.ipynb?_lake_card=%7B%22uid%22%3A%221617090808127-0%22%2C%22src%22%3A%22https%3A%2F%2Fwww.yuque.com%2Fattachments%2Fyuque%2F0%2F2021%2Fipynb%2F2201071%2F1617090808276-5b91fdbf-afbc-4af6-8914-2df0a9ace4ef.ipynb%22%2C%22name%22%3A%22numpy%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.ipynb%22%2C%22size%22%3A10210%2C%22type%22%3A%22%22%2C%22ext%22%3A%22ipynb%22%2C%22progress%22%3A%7B%22percent%22%3A99%7D%2C%22status%22%3A%22done%22%2C%22percent%22%3A0%2C%22id%22%3A%22r8zoa%22%2C%22card%22%3A%22file%22%7D">numpy的基本使用.ipynb</a><br>
 <a name="pfvjS"></a></p>
 <h1 id="创建-or-类型转换">创建 or 类型转换</h1>
 <p><a name="SajnO"></a></p>
@@ -64,38 +153,46 @@
 <p>只有条件 (condition)，没有x和y，则输出满足条件 (即非0) 元素的坐标 (等价于<a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.nonzero.html#numpy.nonzero">numpy.nonzero</a>)。这里的坐标以tuple的形式给出，通常原数组有多少维，输出的tuple中就包含几个数组，分别对应符合条件元素的各维坐标。<br /><img src="https://cdn.nlark.com/yuque/0/2021/png/2201071/1617090556888-592fa5f3-ce0b-440e-b2a5-04c78cccd118.png#align=left&amp;display=inline&amp;height=113&amp;margin=%5Bobject%20Object%5D&amp;name=image.png&amp;originHeight=113&amp;originWidth=534&amp;size=5154&amp;status=done&amp;style=none&amp;width=534" alt="image.png" loading="lazy"><br /><br>
 <br /><br>
 <br /></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://thinson.github.io/post/hello-gridea/</id>
-        <link href="https://thinson.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://thinson.github.io/post/hello-gridea/">
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
